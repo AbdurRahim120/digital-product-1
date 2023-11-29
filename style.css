@@ -1,61 +1,142 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.menu-container{
-    display: flex;
-    background-color: rgb(49, 42, 42);
-    color: white;
-    justify-content: space-around;
-    padding: 10px;
-    align-items: center;
+.menu-container {
+  display: flex;
+  background-color: rgb(49, 42, 42);
+  color: white;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
 }
-.logo-img{
-    width: 150px;
+.logo-img {
+  width: 150px;
 }
 
-.menus{
-    display: flex;
-    list-style: none;
-    font-size: 18px;
+.menus {
+  display: flex;
+  list-style: none;
+  font-size: 18px;
 }
-.menu{
-    margin-right: 10px;
-    padding: 10px;
+.menu {
+  margin-right: 10px;
+  padding: 10px;
 }
-.menu:hover{
-    color: rgb(128, 36, 36);
+.menu:hover {
+  color: rgb(128, 36, 36);
 }
 
 /* banner style start  */
-.banner-container{
+.banner-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background-image: url("/images/background.png"),
+    linear-gradient(45deg, rgb(0, 0, 0), rgb(44, 41, 41));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-img {
+  width: 350px;
+}
+.title {
+  font-size: 60px;
+  font-weight: bold;
+}
+.description {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 17px;
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(240, 86, 25);
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(129, 45, 12);
+}
+
+/* about section design  */
+
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.about-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 40px 0px;
+}
+.title1 {
+  font-size: 30px;
+}
+
+.about-img {
+  width: 300px;
+}
+
+/* services section design  */
+
+.service-container {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.box-container {
+  display: flex;
+  justify-content: space-around;
+}
+.box {
+  height: 320px;
+  width: 260px;
+  text-align: center;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  padding: 10px;
+  box-shadow: 4px 4px 20px rgb(185, 176, 176);
+  border-radius: 20px;
+}
+.box-icon {
+  width: 150px;
+  padding: 20px 0px;
+}
+.box-title {
+  margin: 6px 0px;
+  font-size: 30px;
+}
+.box-btn {
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(36, 35, 35);
+}
+
+/* footer style  */
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+}
+.footer-img{
+    width: 200px;
+}
+.footer-div{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    color: white;
-    background-image: url('/images/background.png'),
-    linear-gradient(45deg,rgb(0, 0, 0), rgb(44, 41, 41))
-    
-
-}
-.banner-img{
-    width: 350px;
-}
-.title{
-    font-size: 60px;
-    font-weight: bold;
-}
-.description{
-    font-size:20px;
-    margin-top: 20px;
-    margin-bottom: 17px;
-}
-.btn{
-    padding: 10px 20px;
-    border: none;
-    font-weight: bold;
-    color: white;
-    background-color: rgb(233, 111, 63);
 }
